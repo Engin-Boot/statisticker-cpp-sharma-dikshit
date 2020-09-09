@@ -10,8 +10,8 @@ Stats Statistics::ComputeStatistics(const std::vector<double> &vec) {
     if(vec.size()== 0) return obj;
     accumulate(vec.begin(), vec.end(), sum);
 
-    obj.max = * max_element(vec.begin(), vec.end());
-    obj.min = * min_element(vec.begin(), vec.end());
+    obj.max = *max_element(vec.begin(), vec.end());
+    obj.min = *min_element(vec.begin(), vec.end());
     obj.average = sum / vec.size();
 
     return obj;
