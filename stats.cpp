@@ -12,7 +12,7 @@ Stats Statistics::ComputeStatistics(const std::vector<double> &vec) {
 
     obj.max = * max_element(vec.begin(), vec.end());
     obj.min = * min_element(vec.begin(), vec.end());
-    obj.avg = sum / vec.size();
+    obj.average = sum / vec.size();
 
     return obj;
 }

@@ -2,9 +2,8 @@
 #include <math.h>
 
 class Stats {
-    private:
-        double max, min, average;
     public:
+        double max, min, average;
         Stats() {
             max = nan("null");
             min = nan("null");
