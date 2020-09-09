@@ -8,7 +8,9 @@ Stats Statistics::ComputeStatistics(const std::vector<double> &vec) {
     double sum = 0;
 
     if(vec.size()== 0) return obj;
-    sum = accumulate(vec.begin(), vec.end(), 0);
+    for(double i : vec) {
+        sum += i;
+    }
 
     obj.max = *max_element(vec.begin(), vec.end());
     obj.min = *min_element(vec.begin(), vec.end());
